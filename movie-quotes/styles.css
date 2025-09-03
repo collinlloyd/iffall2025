@@ -1,0 +1,54 @@
+html{
+    font-family:'Trebuchet MS';
+    color: white;
+    background-position: center;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(2, 24, 0));
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 50%;
+  border-style: solid;
+  border-color: white;
+  border-radius: 25px;
+}
+
+.text{
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 50vw;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.action{
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.character{
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.6;
+    font-size: medium;
+}
+
+hr{
+    margin: 40px 0;
+}
+
+.bottom{
+    margin-bottom: 80px
+}
