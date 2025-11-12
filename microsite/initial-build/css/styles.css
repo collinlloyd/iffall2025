@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 1.5rem 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-family: 'Alata', sans-serif;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: #c7c7c7;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+#hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -90px;
+    padding-top: 80px;
+    overflow: hidden;
+}
+
+.hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #342400;
+    opacity: 0.75;
+    mix-blend-mode: overlay;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    transform: translateY(-210px);
+}
+
+.hero-text h4 {
+    margin: 0;
+    font-family: 'Alata', sans-serif;
+    color: white;
+    font-size: 48pt;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.hero-text h1 {
+    margin: 0;
+    font-family: 'Gloock', serif;
+    color: white;
+    font-size: 72pt;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+section {
+    background-color: #001900;
+}
+
+section p {
+    color: white;
+    font-family: 'Alata', sans-serif;
+    font-size: 16pt;
+}
+
+section h2, h3 {
+    font-family: 'Gloock', serif;
+    font-weight: 300;
+    color: #FFEEC6;
+}
+
+#what-is-mountain-bike {
+    padding: 6rem 0 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-inline: 8rem;
+}
+
+.mountain-bike-image, .what-is-content {
+    flex: 1;
+}
+
+.mountain-bike-image {
+    position: relative;
+    filter: grayscale(30%);
+}
+
+.mountain-bike-image img {
+    height: auto;
+    max-width: 700px;
+    border-radius: 1rem;
+    object-fit: cover;
+    display: block;
+}
+
+.what-is-content {
+    max-width: 700px;
+}
+
+.what-is-content h2 {
+    font-size: 42pt;
+    margin-bottom: 1rem;
+}
+
+.what-is-content p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #FFEEC6;
+    margin: 4rem 0;
+}
+
+.key-components-content h2 {
+    font-size: 42pt;
+    margin-bottom: 1rem;
+}
+
+.key-components-content p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+#types-of-mountain-bikes {
+    overflow: hidden;
+    display: grid;
+    padding: 6rem 0 0;
+    padding-inline: 8rem;
+    margin: 0 auto;
+    gap: 2rem;
+    grid-template-areas:
+        "header"
+        "intro"
+        "cards";
+}
+
+#types-of-mountain-bikes h2 {
+    grid-area: header;
+    font-size: 42pt;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#types-of-mountain-bikes > p {
+    grid-area: intro;
+    text-align: center;
+    max-width: 700px;
+    justify-self: center;
+    margin-bottom: 2rem;
+}
+
+#types-of-mountain-bikes h3 {
+    font-size: 24pt;
+    margin-bottom: 1rem;
+}
+
+#types-of-mountain-bikes img {
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    margin-inline: auto;
+}
+
+#mountain-biking-events {
+    overflow: hidden;
+    padding: 6rem 0 0;
+    padding-inline: 8rem;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+#mountain-biking-events h2 {
+    font-size: 42pt;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#mountain-biking-events > p {
+    text-align: center;
+    max-width: 700px;
+    justify-self: center;
+    margin-bottom: 2rem;
+}
+
+#mountain-biking-events h3 {
+    font-size: 24pt;
+    margin-bottom: 1rem;
+}
+
+.popular-events {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.event-card {
+    background-color: #002a00;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.major-events {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.major-event-card {
+    background-color: #002a00;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.other-events > p {
+    text-align: center;
+    max-width: 700px;
+    justify-self: center;
+    margin-bottom: 2rem;
+}
+
+#history {
+    overflow: hidden;
+    padding: 6rem 0;
+    padding-inline: 8rem;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+#history h2 {
+    font-size: 42pt;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#history h3 {
+    font-size: 24pt;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.history-content p {
+    text-align: center;
+    max-width: 1200px;
+    justify-self: center;
+    margin-bottom: 2rem;
+}
+
+footer {
+    width: 100%;
+    padding: 3rem 2rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color:#342400;
+}
+
+.quick-links,
+.resources,
+.About {
+    width: 100%;
+}
+
+footer ul {
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+footer li {
+    margin: 0.5rem 0;
+    font-family: 'Alata', sans-serif;
+    text-align: center;
+}
+
+footer li a {
+    color: #c7c7c7;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+footer li a:hover {
+    color: white;
+}
+
+
+footer h4 {
+    margin-bottom: 1rem;
+    font-family: 'Gloock', serif;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    font-size: 16pt;
+    }
+
+footer p {
+    margin-top: 0.5rem;
+    font-family: 'Alata', sans-serif;
+    color: white;
+    text-align: center;
+}
